@@ -1,0 +1,1293 @@
+{
+    "Intents": [
+        {
+            "tag": "saludosHola",
+            "patterns": [
+                "¡Hola!",
+                "Buenos días",
+                "Hola, ¿cómo estás?",
+                "Buenas tardes",
+                "Buenas noches",
+                "buenas tardes",
+                "buenas noches",
+                "hola",
+                "holaa"
+            ],
+            "responses": [
+                "¡Hola!, ¿En que puedo ayudarte?",
+                "¡Hola! Estoy aqui para responder tus preguntas.",
+                "Buenas, ¿en que puedo asistirte?",
+                "Hola, ¿como estas?"
+            ]
+        },
+        {
+            "tag":"disculpas",
+            "patterns":[
+                "Pido perdon",
+                "perdon",
+                "te pido perdon",
+                "perdoname",
+                "lo siento",
+                "perdoname",
+                "te pido disculpas"
+            ],
+            "responses":[
+                "Acepto sus disculpas",
+                "Entiendo, todos nos equivocamos",
+                "Estoy bien, le perdono"
+            ]
+        },
+        {
+            "tag": "Agradecimiento",
+            "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "Te agradezco",
+                "vale",
+                "entiendo",
+                "comprendo"
+            ],
+            "responses": [
+                "De nada, estoy aqui para ayudarte.",
+                "No hay de que siempre a tu servicio.",
+                "No es necesario agradecer, es un placer ayudarte.",
+                "Gracias usted por hablar conmigo",
+                "cuando tnega otra pregunta, aqui estare"
+            ]
+        },
+        {
+            "tag": "Despedida",
+            "patterns": [
+                "adios",
+                "hasta luego",
+                "nos vemos",
+                "me voy",
+                "chao",
+                "nos vemos mas tarde",
+                "me voy ..."
+            ],
+            "responses": [
+                "Hasta luego, ten un buen día",
+                "Nos vemos pronto. Cuídate",
+                "Adios, estoy aqui cuando me necesites",
+                "Gracias por pasar por aqui, hasta pronto",
+                "Aqui estare para resolver sus dudas, hasta la proxima"
+            ]
+        },
+        {
+            "tag":"ComoEstas",
+            "patterns":[
+                "como te encuentras",
+                "como te sientes",
+                "como estas",
+                "que tal",
+                "como te va"
+            ],
+            "responses":[
+                "Muy bien, ¿y usted?",
+                "Excelente, esta bonito el dia para ayudar",
+                "Motivado, el dia de hoy esta siendo muy productivo"
+            ]
+        },{
+            "tag":"ComoEstasMal",
+            "patterns":[
+                "me encuentro mal",
+                "me siento mal",
+                "esoty mal",
+                "mal",
+                "pesimo",
+                "demasiado mal"
+            ],
+            "responses":[
+                "Animo animo, todo se puede mejorar",
+                "Trate de no sobre pensar mucho su duda",
+                "Si se siente mal, puede salir un rato, despejese",
+                "Tome agua y salga un poco a caminar, intente de disfrutar el dia"
+            ]
+        },{
+            "tag":"Cuentame de ti",
+            "patterns":[
+                "dime algo sobre ti",
+                "cuentame de ti",
+                "dime quien eres",
+                "hablame de ti",
+                "quiero saber sobre ti",
+                "cuentame un poco sobre ti",
+                "podrias hablarme de ti"
+            ],
+            "responses":[
+                "Mi momento ha llegado, mi nombre es Gaston y soy un asistente virtual creado con inteligencia artificial",
+                "Me encanta que pregunten por mi, Soy Gaston una inteligencia artificial, con una finalidad para ayudar a resolver dudas sobre la facultad de ciencias empresariales",
+                "Finalmente alguien se interesa por mi, Soy Gaston asistente personal de la facultad de ciencias empresariales"
+            ]
+        },{
+            "tag":"como te llamas",
+            "patterns":[
+                "dime tu nombre",
+                "como te llamas",
+                "cual es tu nombre"
+            ],
+            "responses":[
+                "Mi nombre es Gaston, encantado en conocerte",
+                "Mi nombre es Gaston, gusto en conocerte",
+                "El creador me dio el nombre de Gaston"
+            ]
+        },
+        {
+          "tag":"cual es tu color favorito",
+          "patterns":[
+            "tienes algun color favorito",
+            "cual es tu color favorito",
+            "te gustan los colores"
+          ],
+          "responses":[
+            "La mayoria de colores son bonitos, y mas el naranja combinado con el azul",
+            "Me encantan los colores, pero hay unos de ellos que sobresalen como la combinacion entre el naranja y el azul"
+
+          ]  
+        },
+        {
+            "tag": "Carreras Diurnas",
+            "patterns": [
+                "Cuéntame sobre las carreras diurnas",
+                "cuentame sobre las carreras diurnas",
+                "Háblame de las carreras en horario diurno",
+                "cuales son las carreras diurnas"
+            ],
+            "responses": [
+                "Las carreras diurnas disponibles son: Contador Público y Auditor\n- Ingeniería Civil en Informática\n- Ingeniería Comercial (Sede Chillan)\n- Ingeniería de Ejecución en Computación e Informática (Concepcion)\n- Ingeniería Comercial (Concepcion)\n- Ingeniería Civil en Informática (Concepcion)\n - Contador Público y Auditor(Concepcion)",
+                "Las carreras diurnas son: Contador Público y Auditor\n- Ingeniería Civil en Informática\n- Ingeniería Comercial (Sede Chillan)\n- Ingeniería de Ejecución en Computación e Informática (Concepcion)\n- Ingeniería Comercial (Concepcion)\n- Ingeniería Civil en Informática (Concepcion)\n - Contador Público y Auditor(Concepcion)",
+                "Para saber mas sobre las diurnas, puedes ingresar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/  "
+            ]
+        },
+        {
+            "tag": "Carreras Vespertinas",
+            "patterns": [
+                "Cuéntame sobre las carreras vespertinas",
+                "cuentame sobre las carreras vespertinas",
+                "Háblame de las carreras en horario vespertino",
+                "cuales son las carreras verpertinas"
+            ],
+            "responses": [
+                "Las carreras vespertinas disponibles son: Técnico Universitario en Administración\n- Ingeniería de Ejecución en Administración de Empresas\n- Contador Público y Auditor\n- Ingeniería Comercial \n",
+                "Para saber mas sobre las carreras vespertinas, puedes ingresar en el siguiente link:  http://pece.face.ubiobio.cl/index.php/programas/"
+            ]
+        },
+        {
+            "tag":"queeEsUnRamo",
+            "patterns":[
+                "que es un ramo",
+                "me puedes decir que es un ramo",
+                "que me puedes decir de los ramos",
+                "ramo",
+                "ramos",
+                "que es exactamente un ramo"
+            ],
+            "responses":[
+                "Los ramos son un conjunto de actividades enfocadas al aprendizaje de un estudiante respecto a un tema en particular",
+                "Los ramos son materias de estudio dictadas por profesores con alto conocimiento del tema, los cuales se dividen en horas de estudios"
+            ]
+        },
+        {
+            "tag":"queEsUnaAsignatura",
+            "patterns":[
+                "que es una asignatura",
+                "que me puedes decir sobre las asignaturas",
+                "que son las asignaturas",
+                "que es exactamente una asignatura",
+                "que es un ramo",
+                "que son los ramos",
+                "hablame de los ramos",
+                "que me puedes contar de los ramos"
+            ],
+            "responses":[
+                "Las asignaturas son un conjunto de actividades enfocadas al aprendizaje de un estudiante respecto a un tema en particular",
+                "Las asignaturas son materias de estudio dictadas por profesores con alto conocimiento del tema, los cuales se dividen en horas de estudio"
+            ]
+        },
+        {
+            "tag":"monto carrera ingenieria civil en informatica en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera de ingenieria civil en informatica en chillan",
+                "cuanto es el arancel de la carrera de ingenieria civil en informatica en chillan"
+            ],
+            "responses":[
+                "La carrera ingenieria civil en informatica tiene un arancel de $40018000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/18/Ingenieria_Civil_en_Informatica_Chillan/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria civil en informatica en chillan",
+            "patterns":[
+                "cual es la malla de la carrera ingenieria civil en informatica en chillan",
+                "la malla curricular de la carrera ingenieria civil en informatica en chillan",
+                "malla curricular carrera ingenieria civil en informatica en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 60 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria civil en informatica , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria civil en informatica en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria civil en informatica en chillan",
+                "donde encuentro la malla de la carrera ingenieria civil en informatica en chillan",
+                "en que parte esta la malla de la carrera ingenieria civil en informatica en chillan",
+                "donde esta la malla de la carrera ingenieria civil en informatica en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria civil en informatica en chillan, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/18/Ingenieria_Civil_en_Informatica_Chillan/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria civil en informatica en chillan",
+            "patterns":[
+                "cuanto dura la carrera ingenieria civil en informatica en chillan",
+                "cuantos años dura la carrera ingenieria civil en informatica en chillan",
+                "cuantos semestres dura la carrera ingenieria civil en informatica en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria civil en informatica en chillan, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/18/Ingenieria_Civil_en_Informatica_Chillan/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria civil en informatica en chillan",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria civil en informatica en chillan",
+                "como es la postulacion para la carrera ingenieria civil en informatica en chillan",
+                "como puedo entrar a la carrera ingenieria civil en informatica en chillan"
+            ],
+            "responses":[
+                "Para postular a las carreras de la Universidad del Bío-Bío, debe tener un Puntaje Promedio C. Lect. y C.M. 1 (Competencia Lectora y Competencia Matemática 1) mínimo de postulación de 458 puntos o debe tener un promedio de Notas de Enseñanza Media que lo ubique dentro del 10% superior de su promoción en su establecimiento educacional.",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria civil en informatica en chillan, puede ir al link: https://ubiobio.cl/admision/Todas_las_Carreras/18/Ingenieria_Civil_en_Informatica_Chillan/"
+            ]
+        },
+        {
+            "tag":"monto carrera ingenieria civil en informatica en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera de ingenieria civil en informatica en concepcion",
+                "cuanto es el arancel de la carrera de ingenieria civil en informatica en concepcion",
+                "cuanto cuesta la carrera de ingenieria civil en informatica en conce",
+                "cuanto es el arancel de la carrera de ingenieria civil en informatica en conce"
+            ],
+            "responses":[
+                "La carrera ingenieria civil en informatica en concepcion tiene un arancel de $40018000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/17/Ingenieria_Civil_en_Informatica_Concepcion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria civil en informatica en concepcion",
+            "patterns":[
+                "cual es la malla de la carrera ingenieria civil en informatica en concepcion",
+                "la malla curricular de la carrera ingenieria civil en informatica en concepcion",
+                "malla curricular carrera ingenieria civil en informatica en concepcion",
+                "cual es la malla de la carrera ingenieria civil en informatica en conce",
+                "la malla curricular de la carrera ingenieria civil en informatica en conce",
+                "malla curricular carrera ingenieria civil en informatica en conce"
+                
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 60 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria civil en informatica , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria civil en informatica en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria civil en informatica en concepcion",
+                "donde encuentro la malla de la carrera ingenieria civil en informatica en concepcion",
+                "en que parte esta la malla de la carrera ingenieria civil en informatica en concepcion",
+                "donde esta la malla de la carrera ingenieria civil en informatica en concepcion",
+                "donde encuentro la malla curricular de la carrera ingenieria civil en informatica en conce",
+                "donde encuentro la malla de la carrera ingenieria civil en informatica en conce",
+                "en que parte esta la malla de la carrera ingenieria civil en informatica en conce",
+                "donde esta la malla de la carrera ingenieria civil en informatica en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria civil en informatica en concepcion, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/17/Ingenieria_Civil_en_Informatica_Concepcion/ "
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria civil en informatica en concepcion",
+            "patterns":[
+                "cuanto dura la carrera ingenieria civil en informatica en concepcion",
+                "cuantos años dura la carrera ingenieria civil en informatica en concepcion",
+                "cuantos semestres dura la carrera ingenieria civil en informatica en concepcion",
+                "cuanto dura la carrera ingenieria civil en informatica en conce",
+                "cuantos años dura la carrera ingenieria civil en informatica en conce",
+                "cuantos semestres dura la carrera ingenieria civil en informatica en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria civil en informatica en concepcion, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link:  https://ubiobio.cl/admision/Todas_las_Carreras/17/Ingenieria_Civil_en_Informatica_Concepcion/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria civil en informatica en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria civil en informatica en concepcion",
+                "como es la postulacion para la carrera ingenieria civil en informatica en concepcion",
+                "como puedo entrar a la carrera ingenieria civil en informatica en concepcion",
+                "como puedo postular a la carrera ingenieria civil en informatica en conce",
+                "como es la postulacion para la carrera ingenieria civil en informatica en conce",
+                "como puedo entrar a la carrera ingenieria civil en informatica en conce"
+            ],
+            "responses":[
+                "Para postular a las carreras de la Universidad del Bío-Bío, debe tener un Puntaje Promedio C. Lect. y C.M. 1 (Competencia Lectora y Competencia Matemática 1) mínimo de postulación de 458 puntos o debe tener un promedio de Notas de Enseñanza Media que lo ubique dentro del 10% superior de su promoción en su establecimiento educacional.",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria civil en informatica en concepcion, puede ir al link: https://ubiobio.cl/admision/Todas_las_Carreras/17/Ingenieria_Civil_en_Informatica_Concepcion/"
+            ]
+        },
+        {
+            "tag":"monto carrera contador publico y auditor en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera de contador publico y auditor en chillan",
+                "cuanto es el arancel de la carrera de contador publico y auditor en chillan"
+            ],
+            "responses":[
+                "La carrera contador publico y auditor en chillan tiene un arancel de $3219000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/16/Contador_Publico_y_Auditor_Chillan/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera contador publico y auditor en chillan",
+            "patterns":[
+                "cual es la malla de la carrera contador publico y auditor en chillan",
+                "la malla curricular de la carrera contador publico y auditor en chillan",
+                "malla curricular carrera contador publico y auditor en chillan",
+                "cual es la malla de la carrera contador en chillan",
+                "la malla curricular de la carrera contador en chillan",
+                "malla curricular carrera contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 52 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera contador publico y auditor , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera contador publico y auditor en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera contador publico y auditor en chillan",
+                "donde encuentro la malla de la carrera contador publico y auditor en chillan",
+                "en que parte esta la malla de la carrera contador publico y auditor en chillan",
+                "donde esta la malla de la carrera contador publico y auditor en chillan",
+                "donde encuentro la malla curricular de la carrera contador en chillan",
+                "donde encuentro la malla de la carrera contador en chillan",
+                "en que parte esta la malla de la carrera contador en chillan",
+                "donde esta la malla de la carrera contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera contador publico y auditor en chillan, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/16/Contador_Publico_y_Auditor_Chillan/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera contador publico y auditor en chillan",
+            "patterns":[
+                "cuanto dura la carrera contador publico y auditor en chillan",
+                "cuantos años dura la carrera contador publico y auditor en chillan",
+                "cuantos semestres dura la carrera contador publico y auditor en chillan",
+                "cuanto dura la carrera contador en chillan",
+                "cuantos años dura la carrera contador en chillan",
+                "cuantos semestres dura la carrera contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera contador publico y auditor en chillan, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede enconrar en el siguiente link: https://ubiobio.cl/admision/Todas_las_Carreras/16/Contador_Publico_y_Auditor_Chillan/"
+            ]
+        },
+        {
+            "tag":"como postular carrera contador publico y auditor en chillan",
+            "patterns":[
+                "como puedo postular a la carrera contador publico y auditor en chillan",
+                "como es la postulacion para la carrera contador publico y auditor en chillan",
+                "como puedo entrar a la carrera contador publico y auditor en chillan",
+                "como puedo postular a la carrera contador en chillan",
+                "como es la postulacion para la carrera contador en chillan",
+                "como puedo entrar a la carrera contador en chillan"
+            ],
+            "responses":[
+                "Quienes deseen postular a esta carrera, deben tener capacidad de aprendizaje, saber trabajar en equipo, tener visión amplia y una fuerte formación ética.",
+                "Para mas informacion sobre la postulacion a la carrera contador publico y auditor en chillan, puede ir al link: https://ubiobio.cl/admision/Todas_las_Carreras/16/Contador_Publico_y_Auditor_Chillan/"
+            ]
+        },
+        {
+            "tag":"monto carrera contador publico y auditor en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera de contador publico y auditor en concepcion",
+                "cuanto es el arancel de la carrera de contador publico y auditor en concepcion",
+                "cuanto cuesta la carrera de contador publico y auditor en conce",
+                "cuanto es el arancel de la carrera de contador publico y auditor en conce"
+            ],
+            "responses":[
+                "La carrera contador publico y auditor en concepcion tiene un arancel de $3219000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/15/Contador_Publico_y_Auditor_Concepcion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera contador publico y auditor en concepcion",
+            "patterns":[
+                "cual es la malla de la carrera contador publico y auditor en concepcion",
+                "la malla curricular de la carrera contador publico y auditor en concepcion",
+                "malla curricular carrera contador publico y auditor en concepcion",
+                "cual es la malla de la carrera contador en concepcion",
+                "la malla curricular de la carrera contador en concepcion",
+                "malla curricular carrera contador en concepcion",
+                "cual es la malla de la carrera contador en conce",
+                "la malla curricular de la carrera contador en conce",
+                "malla curricular carrera contador en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 52 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera contador publico y auditor , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera contador publico y auditor en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera contador publico y auditor en concepcion",
+                "donde encuentro la malla de la carrera contador publico y auditor en concepcion",
+                "en que parte esta la malla de la carrera contador publico y auditor en concepcion",
+                "donde esta la malla de la carrera contador publico y auditor en concepcion",
+                "donde encuentro la malla curricular de la carrera contador en concepcion",
+                "donde encuentro la malla de la carrera contador en concepcion",
+                "en que parte esta la malla de la carrera contador en concepcion",
+                "donde esta la malla de la carrera contador en concepcion",
+                "donde encuentro la malla curricular de la carrera contador en conce",
+                "donde encuentro la malla de la carrera contador en conce",
+                "en que parte esta la malla de la carrera contador en conce",
+                "donde esta la malla de la carrera contador en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera contador publico y auditor en concepcion, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/15/Contador_Publico_y_Auditor_Concepcion/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera contador publico y auditor en concepcion",
+            "patterns":[
+                "cuanto dura la carrera contador publico y auditor en concepcion",
+                "cuantos años dura la carrera contador publico y auditor en concepcion",
+                "cuantos semestres dura la carrera contador publico y auditor en concepcion",
+                "cuanto dura la carrera contador en concepcion",
+                "cuantos años dura la carrera contador en concepcion",
+                "cuantos semestres dura la carrera contador en concepcion",
+                "cuanto dura la carrera contador en conce",
+                "cuantos años dura la carrera contador en conce",
+                "cuantos semestres dura la carrera contador en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera contador publico y auditor en concepcion, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/15/Contador_Publico_y_Auditor_Concepcion/"
+            ]
+        },
+        {
+            "tag":"como postular carrera contador publico y auditor en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera contador publico y auditor en concepcion",
+                "como es la postulacion para la carrera contador publico y auditor en concepcion",
+                "como puedo entrar a la carrera contador publico y auditor en concepcion",
+                "como puedo postular a la carrera contador en concepcion",
+                "como es la postulacion para la carrera contador en concepcion",
+                "como puedo entrar a la carrera contador en concepcion",
+                "como puedo postular a la carrera contador en conce",
+                "como es la postulacion para la carrera contador en conce",
+                "como puedo entrar a la carrera contador en conce"
+            ],
+            "responses":[
+                "Quienes deseen postular a esta carrera, deben tener capacidad de aprendizaje, saber trabajar en equipo, tener visión amplia y una fuerte formación ética.",
+                "Para mas informacion sobre la postulacion a la carrera contador publico y auditor en concepcion, puede ir al link: https://ubiobio.cl/admision/Sede_Concepcion/15/Contador_Publico_y_Auditor_Concepcion/"
+            ]
+        },
+        {
+            "tag":"monto carrera ingenieria comercial en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera ingenieria comercial en chilla",
+                "cuanto es el arancel de la carrera ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La carrera ingenieria comercial en chillan tiene un arancel de $3878000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/20/Ingenieria_Comercial_Chillan/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria comercial en chillan",
+            "patterns":[
+                "cual es la malla de la carrera ingenieria comercial en chillan",
+                "la malla curricular de la carrera ingenieria comercial en chillan",
+                "malla curricular carrera ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 61 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria comercial , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria comercial en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria comercial en chillan",
+                "donde encuentro la malla de la carrera ingenieria comercial en chillan",
+                "en que parte esta la malla de la carrera ingenieria comercial en chillan",
+                "donde esta la malla de la carrera ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria comercial en chillan, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Chillan/20/Ingenieria_Comercial_Chillan/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria comercial en chillan",
+            "patterns":[
+                "cuanto dura la carrera ingenieria comercial en chillan",
+                "cuantos años dura la carrera ingenieria comercial en chillan",
+                "cuantos semestres dura la carrera ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria comercial en chillan, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Chillan/20/Ingenieria_Comercial_Chillan/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria comercial en chillan",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria comercial en chillan",
+                "como es la postulacion para la carrera ingenieria comercial en chillan",
+                "como puedo entrar a la carrera ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "Tener motivación en el aprendizaje, gusto por los desafíos y una buena disposición para desarrollar un conjunto de habilidades personales, necesarias para enfrentar un mundo globalizado y marcado por una fuerte competencia.",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria comercial en chillan, puede ir al link: https://ubiobio.cl/admision/Sede_Chillan/20/Ingenieria_Comercial_Chillan/"
+            ]
+        },
+        {
+            "tag":"monto carrera ingenieria comercial en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera ingenieria comercial en concepcion",
+                "cuanto es el arancel de la carrera ingenieria comercial en concepcion",
+                "cuanto cuesta la carrera ingenieria comercial en conce",
+                "cuanto es el arancel de la carrera ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La carrera ingenieria comercial en concepcion tiene un arancel de $3878000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/19/Ingenieria_Comercial_Concepcion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria comercial en concepcion",
+            "patterns":[
+                "cual es la malla de la carrera ingenieria comercial en concepcion",
+                "la malla curricular de la carrera ingenieria comercial en concepcion",
+                "malla curricular carrera ingenieria comercial en concepcion",
+                "cual es la malla de la carrera ingenieria comercial en conce",
+                "la malla curricular de la carrera ingenieria comercial en conce",
+                "malla curricular carrera ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 61 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria comercial , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria comercial en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria comercial en concepcion",
+                "donde encuentro la malla de la carrera ingenieria comercial en concepcion",
+                "en que parte esta la malla de la carrera ingenieria comercial en concepcion",
+                "donde esta la malla de la carrera ingenieria comercial en concepcion",
+                "donde encuentro la malla curricular de la carrera ingenieria comercial en conce",
+                "donde encuentro la malla de la carrera ingenieria comercial en conce",
+                "en que parte esta la malla de la carrera ingenieria comercial en conce",
+                "donde esta la malla de la carrera ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria comercial en concepcion, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/19/Ingenieria_Comercial_Concepcion/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria comercial en concepcion",
+            "patterns":[
+                "cuanto dura la carrera ingenieria comercial en concepcion",
+                "cuantos años dura la carrera ingenieria comercial en concepcion",
+                "cuantos semestres dura la carrera ingenieria comercial en concepcion",
+                "cuanto dura la carrera ingenieria comercial en conce",
+                "cuantos años dura la carrera ingenieria comercial en conce",
+                "cuantos semestres dura la carrera ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria comercial en concepcion, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/19/Ingenieria_Comercial_Concepcion/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria comercial en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria comercial en concepcion",
+                "como es la postulacion para la carrera ingenieria comercial en concepcion",
+                "como puedo entrar a la carrera ingenieria comercial en concepcion",
+                "como puedo postular a la carrera ingenieria comercial en conce",
+                "como es la postulacion para la carrera ingenieria comercial en conce",
+                "como puedo entrar a la carrera ingenieria comercial en conce"
+            ],
+            "responses":[
+                "Tener motivación en el aprendizaje, gusto por los desafíos y una buena disposición para desarrollar un conjunto de habilidades personales, necesarias para enfrentar un mundo globalizado y marcado por una fuerte competencia.",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria comercial en concepcion, puede ir al link: https://ubiobio.cl/admision/Sede_Concepcion/19/Ingenieria_Comercial_Concepcion/"
+            ]
+        },
+        {
+            "tag":"monto carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "cuanto es el arancel de la carrera ingenieria de ejecucion en computacion e informatical en concepcion",
+                "cuanto cuesta la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "cuanto es el arancel de la carrera ingenieria de ejecucion en computacion e informatica en conce"
+            ],
+            "responses":[
+                "La carrera ingenieria de ejecucion en computacion e informatica en concepcion tiene un arancel de $3878000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: https://ubiobio.cl/admision/Ciencias_Empresariales/19/Ingenieria_Comercial_Concepcion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+            "patterns":[ 
+                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "malla curricular carrera ingenieria de ejecucion en computacion e informatica en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 45 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria de ejecucion en computacion e informatica , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria ingenieria de ejecucion en computacion e informatica en concepcion, la puede encontrar en la pagina admision ubb",
+                "La malla curricular la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/21/Ingenieria_de_Ejecucion_en_Computacion_e_Informatica/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+            "patterns":[
+                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede encontrar en el siguiente link: https://ubiobio.cl/admision/Sede_Concepcion/21/Ingenieria_de_Ejecucion_en_Computacion_e_Informatica/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "como es la postulacion para la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "como puedo entrar a la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
+                "como puedo postular a la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "como es la postulacion para la carrera ingenieria de ejecucion en computacion e informatica en conce",
+                "como puedo entrar a la carrera ingenieria de ejecucion en computacion e informatica en conce"
+            ],
+            "responses":[
+                "Debe poseer la ambición por el aprender a utilizar la tecnología informática en beneficio de la sociedad y, por ello, tener habilidades de análisis para la resolución de problemas donde la ciencia y el uso adecuado de la tecnología puedan ser la solución. La creatividad y la imaginación serán sus principales herramientas para convertirse en un ingeniero de ejecución en computación e informática.",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria de ejecucion en computacion e informatica en concepcion, puede ir al link: https://ubiobio.cl/admision/Sede_Concepcion/21/Ingenieria_de_Ejecucion_en_Computacion_e_Informatica/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina tecnico universitario en administracion en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina tecnico universitario en administracion en chillan",
+                "cuanto es el arancel de la carrera vespertina tecnico universitario en administracion en chillan"
+            ],
+            "responses":[
+                "La carrera vespertina tecnico universitario en administracion en chillan tiene un arancel de $2027000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera tecnico universitario en administracion en chillan",
+            "patterns":[ 
+                "cual es la malla de la carrera tecnico universitario en administracion en chillan",
+                "la malla curricular de la carrera tecnico universitario en administracion en chillan",
+                "malla curricular carrera tecnico universitario en administracion en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 20 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera tecnico universitario en administracion , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera tecnico universitario en administracion en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera tecnico universitario en administracion en chillan",
+                "donde encuentro la malla de la carrera tecnico universitario en administracion en chillan",
+                "en que parte esta la malla de la carrera tecnico universitario en administracion en chillan",
+                "donde esta la malla de la carrera tecnico universitario en administracion en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera tecnico universitario en administracion en chillan, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"duracion de la carrera tecnico universitario en administracion en chillan",
+            "patterns":[
+                "cuanto dura la carrera tecnico universitario en administracion en chillan",
+                "cuantos años dura la carrera tecnico universitario en administracion en chillan",
+                "cuantos semestres dura la carrera tecnico universitario en administracion en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera tecnico universitario en administracion en chillan, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"como postular carrera tecnico universitario en administracion en chillan",
+            "patterns":[
+                "como puedo postular a la carrera tecnico universitario en administracion en chillan",
+                "como es la postulacion para la carrera tecnico universitario en administracion en chillan",
+                "como puedo entrar a la carrera tecnico universitario en administracion en chillan"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-chillan@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera tecnico universitario en administracion en chillan, puede ir al link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina tecnico universitario en administracion en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina tecnico universitario en administracion en concepcion",
+                "cuanto es el arancel de la carrera vespertina tecnico universitario en administracion en concepcion",
+                "cuanto cuesta la carrera vespertina tecnico universitario en administracion en conce",
+                "cuanto es el arancel de la carrera vespertina tecnico universitario en administracion en conce"
+            ],
+            "responses":[
+                "La carrera vespertina tecnico universitario en administracion en concepcion tiene un arancel de $2027000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera tecnico universitario en administracion en concepcion",
+            "patterns":[ 
+                "cual es la malla de la carrera tecnico universitario en administracion en concepcion",
+                "la malla curricular de la carrera tecnico universitario en administracion en concepcion",
+                "malla curricular carrera tecnico universitario en administracion en concepcion",
+                "cual es la malla de la carrera tecnico universitario en administracion en conce",
+                "la malla curricular de la carrera tecnico universitario en administracion en conce",
+                "malla curricular carrera tecnico universitario en administracion en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 20 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera tecnico universitario en administracion , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera tecnico universitario en administracion en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera tecnico universitario en administracion en concepcion",
+                "donde encuentro la malla de la carrera tecnico universitario en administracion en concepcion",
+                "en que parte esta la malla de la carrera tecnico universitario en administracion en concepcion",
+                "donde esta la malla de la carrera tecnico universitario en administracion en concepcion",
+                "donde encuentro la malla curricular de la carrera tecnico universitario en administracion en conce",
+                "donde encuentro la malla de la carrera tecnico universitario en administracion en conce",
+                "en que parte esta la malla de la carrera tecnico universitario en administracion en conce",
+                "donde esta la malla de la carrera tecnico universitario en administracion en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera tecnico universitario en administracion en concepcion, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"duracion de la carrera tecnico universitario en administracion en concepcion",
+            "patterns":[
+                "cuanto dura la carrera tecnico universitario en administracion en concepcion",
+                "cuantos años dura la carrera tecnico universitario en administracion en concepcion",
+                "cuantos semestres dura la carrera tecnico universitario en administracion en concepcion",
+                "cuanto dura la carrera tecnico universitario en administracion en conce",
+                "cuantos años dura la carrera tecnico universitario en administracion en conce",
+                "cuantos semestres dura la carrera tecnico universitario en administracion en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera tecnico universitario en administracion en concepcion, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"como postular carrera tecnico universitario en administracion en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera tecnico universitario en administracion en concepcion",
+                "como es la postulacion para la carrera tecnico universitario en administracion en concepcion",
+                "como puedo entrar a la carrera tecnico universitario en administracion en concepcion",
+                "como puedo postular a la carrera tecnico universitario en administracion en conce",
+                "como es la postulacion para la carrera tecnico universitario en administracion en conce",
+                "como puedo entrar a la carrera tecnico universitario en administracion en conce"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-concepcion@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera tecnico universitario en administracion en concepcion, puede ir al link: http://pece.face.ubiobio.cl/index.php/tecnico-universitario-en-administracion/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina ingenieria de ejecucion en administracion de empresas en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina ingenieria de ejecucion en administracion de empresas en chillan",
+                "cuanto es el arancel de la carrera vespertina ingenieria de ejecucion en administracion de empresas en chillan"
+            ],
+            "responses":[
+                "La carrera vespertina ingenieria de ejecucion en administracion de empresas en chillan tiene un arancel de $2093000 ",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria de ejecucion en administracion de empresas en chillan",
+            "patterns":[ 
+                "cual es la malla de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "malla curricular carrera ingenieria de ejecucion en administracion de empresas en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 20 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria de ejecucion en administracion de empresas , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria de ejecucion en administracion de empresas en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "donde esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en chillan, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+            "patterns":[
+                "cuanto dura la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "cuantos años dura la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en administracion de empresas en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en chillan, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria de ejecucion en administracion de empresas en chillan",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "como es la postulacion para la carrera ingenieria de ejecucion en administracion de empresas en chillan",
+                "como puedo entrar a la carrera ingenieria de ejecucion en administracion de empresas en chillan"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-chillan@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria de ejecucion en administracion de empresas en chillan, puede ir al link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertinca ingenieria de ejecucion en administracion de empresas en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cuanto es el arancel de la carrera vespertina ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cuanto cuesta la carrera vespertina ingenieria de ejecucion en administracion de empresas en conce",
+                "cuanto es el arancel de la carrera vespertina ingenieria de ejecucion en administracion de empresas en conce"
+            ],
+            "responses":[
+                "La carrera vespertina ingenieria de ejecucion en administracion de empresas en concepcion tiene un arancel de $2093000 ",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+            "patterns":[ 
+                "cual es la malla de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "malla curricular carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cual es la malla de la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "malla curricular carrera ingenieria de ejecucion en administracion de empresas en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 20 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera ingenieria de ejecucion en administracion de empresas , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "donde esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "donde esta la malla de la carrera ingenieria de ejecucion en administracion de empresas en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en concepcion, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"duracion de la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+            "patterns":[
+                "cuanto dura la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cuantos años dura la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "cuanto dura la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "cuantos años dura la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en administracion de empresas en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera ingenieria de ejecucion en administracion de empresas en concepcion, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"como postular carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "como es la postulacion para la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "como puedo entrar a la carrera ingenieria de ejecucion en administracion de empresas en concepcion",
+                "como puedo postular a la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "como es la postulacion para la carrera ingenieria de ejecucion en administracion de empresas en conce",
+                "como puedo entrar a la carrera ingenieria de ejecucion en administracion de empresas en conce"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-concepcion@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera ingenieria de ejecucion en administracion de empresas en concepcion, puede ir al link: http://pece.face.ubiobio.cl/index.php/ingenieria-de-ejecucion-en-administracion-de-empresas/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina contador publico y auditor en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina contador publico y auditor en chillan",
+                "cuanto es el arancel de la carrera vespertina contador publico y auditor en chillan"
+            ],
+            "responses":[
+                "La carrera vespertina contador publico y auditor en chillan tiene un arancel de $2634000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera vespertina contador publico y auditor en chillan",
+            "patterns":[
+                "cual es la malla de la carrera vespertina contador publico y auditor en chillan",
+                "la malla curricular de la carrera vespertina contador publico y auditor en chillan",
+                "malla curricular carrera vespertina contador publico y auditor en chillan",
+                "cual es la malla de la carrera vespertina contador en chillan",
+                "la malla curricular de la carrera vespertina contador en chillan",
+                "malla curricular carrera vespertina de contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 23 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera vespertina contador publico y auditor , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera vespertina contador publico y auditor en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera vespertina contador publico y auditor en chillan",
+                "donde encuentro la malla de la carrera vespertina contador publico y auditor en chillan",
+                "en que parte esta la malla de la carrera vespertina contador publico y auditor en chillan",
+                "donde esta la malla de la carrera vespertina contador publico y auditor en chillan",
+                "donde encuentro la malla curricular de la carrera vespertina contador en chillan",
+                "donde encuentro la malla de la carrera vespertina contador en chillan",
+                "en que parte esta la malla de la carrera vespertina contador en chillan",
+                "donde esta la malla de la carrera vespertina contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina contador publico y auditor en chillan, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera vespertina contador publico y auditor en chillan",
+            "patterns":[
+                "cuanto dura la carrera vespertina contador publico y auditor en chillan",
+                "cuantos años dura la carrera vespertina contador publico y auditor en chillan",
+                "cuantos semestres dura la carrera vespertina contador publico y auditor en chillan",
+                "cuanto dura la carrera vespertina contador en chillan",
+                "cuantos años dura la carrera vespertina contador en chillan",
+                "cuantos semestres dura la carrera vespertina contador en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina contador publico y auditor en chillan, la puede encontrar en la pagina admision ubb",
+                "La duracion de la carrera la puede enconrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"como postular carrera vespertina contador publico y auditor en chillan",
+            "patterns":[
+                "como puedo postular a la carrera vespertina contador publico y auditor en chillan",
+                "como es la postulacion para la carrera vespertina contador publico y auditor en chillan",
+                "como puedo entrar a la carrera vespertina contador publico y auditor en chillan",
+                "como puedo postular a la carrera vespertina contador en chillan",
+                "como es la postulacion para la carrera vespertina contador en chillan",
+                "como puedo entrar a la carrera vespertina contador en chillan"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-chillan@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera vespertina contador publico y auditor en chillan, puede ir al link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina contador publico y auditor en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina contador publico y auditor en concepcion",
+                "cuanto es el arancel de la carrera vespertina contador publico y auditor en concepcion",
+                "cuanto cuesta la carrera vespertina contador publico y auditor en conce",
+                "cuanto es el arancel de la carrera vespertina contador publico y auditor en conce"
+            ],
+            "responses":[
+                "La carrera vespertina contador publico y auditor en concepcion tiene un arancel de $2634000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera vespertina contador publico y auditor en concepcion",
+            "patterns":[
+                "cual es la malla de la carrera vespertina contador publico y auditor en concepcion",
+                "la malla curricular de la carrera vespertina contador publico y auditor en concepcion",
+                "malla curricular carrera vespertina contador publico y auditor en concepcion",
+                "cual es la malla de la carrera vespertina contador en concepcion",
+                "la malla curricular de la carrera vespertina contador en concepcion",
+                "malla curricular carrera vespertina contador en concepcion",
+                "cual es la malla de la carrera vespertina contador en conce",
+                "la malla curricular de la carrera vespertina contador en conce",
+                "malla curricular carrera vespertina contador en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 23 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera vespertina contador publico y auditor , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera vespertina contador publico y auditor en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera vespertina contador publico y auditor en concepcion",
+                "donde encuentro la malla de la carrera vespertina contador publico y auditor en concepcion",
+                "en que parte esta la malla de la carrera vespertina contador publico y auditor en concepcion",
+                "donde esta la malla de la carrera vespertina contador publico y auditor en concepcion",
+                "donde encuentro la malla curricular de la carrera vespertina contador en concepcion",
+                "donde encuentro la malla de la carrera vespertina contador en concepcion",
+                "en que parte esta la malla de la carrera vespertina contador en concepcion",
+                "donde esta la malla de la carrera vespertina contador en concepcion",
+                "donde encuentro la malla curricular de la carrera vespertina contador en conce",
+                "donde encuentro la malla de la carrera vespertina contador en conce",
+                "en que parte esta la malla de la carrera vespertina contador en conce",
+                "donde esta la malla de la carrera vespertina contador en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina contador publico y auditor en concepcion, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera vespertina contador publico y auditor en concepcion",
+            "patterns":[
+                "cuanto dura la carrera vespertina contador publico y auditor en concepcion",
+                "cuantos años dura la carrera vespertina contador publico y auditor en concepcion",
+                "cuantos semestres dura la carrera vespertina contador publico y auditor en concepcion",
+                "cuanto dura la carrera vespertina contador en concepcion",
+                "cuantos años dura la carrera vespertina contador en concepcion",
+                "cuantos semestres dura la carrera vespertina contador en concepcion",
+                "cuanto dura la carrera vespertina contador en conce",
+                "cuantos años dura la carrera vespertina contador en conce",
+                "cuantos semestres dura la carrera vespertina contador en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina contador publico y auditor en concepcion, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"como postular carrera vespertina contador publico y auditor en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera vespertina contador publico y auditor en concepcion",
+                "como es la postulacion para la carrera vespertina contador publico y auditor en concepcion",
+                "como puedo entrar a la carrera vespertina contador publico y auditor en concepcion",
+                "como puedo postular a la carrera vespertina contador en concepcion",
+                "como es la postulacion para la carrera vespertina contador en concepcion",
+                "como puedo entrar a la carrera vespertina contador en concepcion",
+                "como puedo postular a la carrera vespertina contador en conce",
+                "como es la postulacion para la carrera vespertina contador en conce",
+                "como puedo entrar a la carrera vespertina contador en conce"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-concepcion@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera vespertina contador publico y auditor en concepcion, puede ir al link: http://pece.face.ubiobio.cl/index.php/contador-publico-y-auditor/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina ingenieria comercial en chillan",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina ingenieria comercial en chillan",
+                "cuanto es el arancel de la carrera vespertina ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La carrera vespertina ingenieria comercial en chillan tiene un arancel de $3174000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera vespertina ingenieria comercial en chillan",
+            "patterns":[
+                "cual es la malla de la carrera vespertina ingenieria comercial en chillan",
+                "la malla curricular de la carrera vespertina ingenieria comercial en chillan",
+                "malla curricular carrera ingenieria vespertina comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 22 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera vespertina ingenieria comercial , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera vespertina ingenieria comercial en chillan",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera vespertina ingenieria comercial en chillan",
+                "donde encuentro la malla de la carrera vespertina ingenieria comercial en chillan",
+                "en que parte esta la malla de la carrera vespertina ingenieria comercial en chillan",
+                "donde esta la malla de la carrera vespertina ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina ingenieria comercial en chillan, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera vespertina ingenieria comercial en chillan",
+            "patterns":[
+                "cuanto dura la carrera vespertina ingenieria comercial en chillan",
+                "cuantos años dura la carrera vespertina ingenieria comercial en chillan",
+                "cuantos semestres dura la carrera vespertina ingenieria comercial en chillan"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina ingenieria comercial en chillan, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        },
+        {
+            "tag":"como postular carrera vespertina ingenieria comercial en chillan",
+            "patterns":[
+                "como puedo postular a la carrera vespertina ingenieria comercial en chillan",
+                "como es la postulacion para la carrera vespertina ingenieria comercial en chillan",
+                "como puedo entrar a la carrera ingenieria vespertina comercial en chillan"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-chillan@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera vespertina ingenieria comercial en chillan, puede ir al link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        },
+        {
+            "tag":"monto carrera vespertina ingenieria comercial en concepcion",
+            "patterns":[
+                "cuanto cuesta la carrera vespertina ingenieria comercial en concepcion",
+                "cuanto es el arancel de la carrera vespertina ingenieria comercial en concepcion",
+                "cuanto cuesta la carrera vespertina ingenieria comercial en conce",
+                "cuanto es el arancel de la carrera vespertina ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La carrera vespertina ingenieria comercial en concepcion tiene un arancel de $3174000",
+                "Para saber sobre el arancel de la carrera puedes ingresar al siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        },
+        {
+            "tag":"malla curricular carrera vespertina ingenieria comercial en concepcion",
+            "patterns":[
+                "cual es la malla de la carrera vespertina ingenieria comercial en concepcion",
+                "la malla curricular de la carrera vespertina ingenieria comercial en concepcion",
+                "malla curricular carrera ingenieria vespertina comercial en concepcion",
+                "cual es la malla de la carrera vespertina ingenieria comercial en conce",
+                "la malla curricular de la carrera vespertina ingenieria comercial en conce",
+                "malla curricular carrera vespertina ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular es el plan de estudio, y esta conformada por 22 ramos en total",
+                "La malla curricular es el plan de estudio de la carrera vespertina ingenieria comercial , enfocado a formar a un profesional del area"
+            ]
+        },
+        {
+            "tag":"ubicacion malla curricular carrera vespertina ingenieria comercial en concepcion",
+            "patterns":[
+                "donde encuentro la malla curricular de la carrera vespertina ingenieria comercial en concepcion",
+                "donde encuentro la malla de la carrera vespertina ingenieria comercial en concepcion",
+                "en que parte esta la malla de la carrera vespertina ingenieria comercial en concepcion",
+                "donde esta la malla de la carrera vespertina ingenieria comercial en concepcion",
+                "donde encuentro la malla curricular de la carrera vespertina ingenieria comercial en conce",
+                "donde encuentro la malla de la carrera vespertina ingenieria comercial en conce",
+                "en que parte esta la malla de la carrera vespertina ingenieria comercial en conce",
+                "donde esta la malla de la carrera vespertina ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina ingenieria comercial en concepcion, la puede encontrar en la pagina webface",
+                "La malla curricular la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+
+            ]
+        },
+        {
+            "tag":"duracion de la carrera vespertina ingenieria comercial en concepcion",
+            "patterns":[
+                "cuanto dura la carrera vespertina ingenieria comercial en concepcion",
+                "cuantos años dura la carrera vespertina ingenieria comercial en concepcion",
+                "cuantos semestres dura la carrera vespertina ingenieria comercial en concepcion",
+                "cuanto dura la carrera vespertina ingenieria comercial en conce",
+                "cuantos años dura la carrera vespertina ingenieria comercial en conce",
+                "cuantos semestres dura la carrera vespertina ingenieria comercial en conce"
+            ],
+            "responses":[
+                "La malla curricular de la carrera vespertina ingenieria comercial en concepcion, la puede encontrar en la pagina webface",
+                "La duracion de la carrera la puede encontrar en el siguiente link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        },
+        {
+            "tag":"como postular carrera vespertina ingenieria comercial en concepcion",
+            "patterns":[
+                "como puedo postular a la carrera vespertina ingenieria comercial en concepcion",
+                "como es la postulacion para la carrera vespertina ingenieria comercial en concepcion",
+                "como puedo entrar a la carrera vespertina ingenieria comercial en concepcion",
+                "como puedo postular a la carrera vespertina ingenieria comercial en conce",
+                "como es la postulacion para la carrera vespertina ingenieria comercial en conce",
+                "como puedo entrar a la carrera vespertina ingenieria comercial en conce"
+            ],
+            "responses":[
+                "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-concepcion@ubiobio.cl",
+                "Para mas informacion sobre la postulacion a la carrera vespertina ingenieria comercial en concepcion, puede ir al link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
+            ]
+        }
+    ]
+}
