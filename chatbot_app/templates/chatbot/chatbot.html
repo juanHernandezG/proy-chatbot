@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {% comment %} <script src="{% static 'static/js/codigo.js' %}"></script> {% endcomment %}
 
-    <style>
+    {% comment %} <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -90,7 +91,7 @@
             height: 13px;
             margin-right: 5px; /* Espaciado entre la imagen y el texto (si hay) */
         }
-         
+        
         .box-header{
             background-color: #ff6c3a;
             display: block;
@@ -222,7 +223,7 @@
                 margin-right: 5px;
             }
         }        
-    </style>
+    </style> {% endcomment %}
 </head>
 <body>
     <!-- Área del chat -->
@@ -233,7 +234,7 @@
             <h3 class="box-title">Gastón</h3>
             
             <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
+                <button id="btnComentarios" type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
                     {% comment %} <img src="{% static 'img/comentario.png' %}" alt="Comentarios" style="margin-right: 10px;width:20px; height:20px;"> {% endcomment %}
                     <i class="fa fa-comments"></i>
                 </button>
@@ -360,12 +361,45 @@
 
                 // Lógica adicional si es necesario al volver al chatbot
             });
+
+            $('#btnComentarios').click(function() {
+                $('#input-container').empty(); // Limpiar el contenido del input y el botón
+                $('#chatbox').empty(); // Limpiar el contenido del chatbox
+
+                // Cargar el contenido del comentarios.html en el chatbox
+                $('#chatbox').load('/chatbot/mostrar_comentarios/', function(response, status, xhr) {
+                    if (status == "error") {
+                        var msg = "Error al cargar comentarios: ";
+                        console.log(msg + xhr.status + " " + xhr.statusText);
+                    }else {
+                        // Mostrar el instructivo y el botón para volver al chat
+                        $('#chatbox').append('<button id="volverChatbot"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>');
+                    }
+                });
+            });
+
+            // Manejar el clic del botón "Volver al Chat"
+            $(document).on('click', '#btnBackToChat', function() {
+                $('#chatbox').empty(); // Limpiar el contenido del chatbox
+                $('#input-container').show(); // Mostrar el contenedor del input y el botón
+                
+                // Insertar la fecha en el chatbox arriba del mensaje de bienvenida
+                $('#chatbox').prepend('<div class="current-date" style="text-align: center; color: #0040B0; font-weight: bold; margin-bottom: 10px;">' + formattedDate + '</div>');
+                // Mostrar el mensaje de bienvenida al volver al chatbot
+                $('#chatbox').append('<div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' + welcomeMessage + '</div>');
+
+                // Lógica adicional si es necesario al volver al chatbot
+            });
+
         });
 
 
         
         
     </script>
+    <div id="comentarios-container" style="display: none;">
+        <!-- Contenedor para cargar el HTML de comentarios -->
+    </div>
     <div id="instructivo-container" style="display: none;">
     </div>
 </body>

@@ -5,5 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', chatbot_view, name='chatbot_view'),
-    path('mostrar_instructivo/', views.mostrar_instructivo, name='mostrar_instructivo')
+    path('mostrar_instructivo/', views.mostrar_instructivo, name='mostrar_instructivo'),
+    path('mostrar_comentarios/', views.mostrar_comentarios, name='mostrar_comentarios'),
 ]

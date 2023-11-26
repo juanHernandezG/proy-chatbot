@@ -19,3 +19,6 @@ def chatbot_view(request):
 
 def mostrar_instructivo(request):
     return render(request, 'chatbot/instructivo.html')
+
+def mostrar_comentarios(request):
+    return render(request, 'chatbot/comentarios.html')
