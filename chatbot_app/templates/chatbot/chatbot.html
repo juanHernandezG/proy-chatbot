@@ -363,7 +363,7 @@
             });
 
             $('#btnComentarios').click(function() {
-                $('#input-container').empty(); // Limpiar el contenido del input y el botón
+                $('#input-container').hide(); // Limpiar el contenido del input y el botón
                 $('#chatbox').empty(); // Limpiar el contenido del chatbox
 
                 // Cargar el contenido del comentarios.html en el chatbox
@@ -373,23 +373,23 @@
                         console.log(msg + xhr.status + " " + xhr.statusText);
                     }else {
                         // Mostrar el instructivo y el botón para volver al chat
-                        $('#chatbox').append('<button id="volverChatbot"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>');
+                        $('#chatbox').append('<button id="btnBackToChat"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>');
                     }
                 });
             });
 
             // Manejar el clic del botón "Volver al Chat"
             $(document).on('click', '#btnBackToChat', function() {
-                $('#chatbox').empty(); // Limpiar el contenido del chatbox
+                $('#chatbox').empty(); // Limpiar el contenido del chatbox, excluyendo el input-container
                 $('#input-container').show(); // Mostrar el contenedor del input y el botón
-                
+            
                 // Insertar la fecha en el chatbox arriba del mensaje de bienvenida
                 $('#chatbox').prepend('<div class="current-date" style="text-align: center; color: #0040B0; font-weight: bold; margin-bottom: 10px;">' + formattedDate + '</div>');
                 // Mostrar el mensaje de bienvenida al volver al chatbot
                 $('#chatbox').append('<div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' + welcomeMessage + '</div>');
-
+            
                 // Lógica adicional si es necesario al volver al chatbot
-            });
+            });                       
 
         });
 
