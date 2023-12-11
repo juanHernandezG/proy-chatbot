@@ -48,20 +48,21 @@ body {
     overflow-y: scroll;
     padding: 10px;
     background-color: #d3d3d3;
+    width: 100%;
 }
 
 #user-input {
-    width: calc(80% - 20px); /* El campo de entrada ocupa el 75% del ancho */
+    width: calc(80% - 20px); 
     padding: 10px;
     box-sizing: border-box;
     border: none;
     border-top: 1px solid #ccc;
     outline: none;
-    display: inline-block; /* Hacer que el campo de entrada sea en línea */
+    display: inline-block; 
 }
 
 #send-button {
-    width: calc(20% - 20px); /* El botón ocupa el 25% del ancho */
+    width: calc(20% - 20px); 
     padding: 10px;
     box-sizing: border-box;
     background-color: #0040B0;
@@ -69,13 +70,13 @@ body {
     border: none;
     border-radius: 0 0 8px 8px;
     cursor: pointer;
-    display: inline-block; /* Hacer que el botón sea en línea */
+    display: inline-block; 
 }
 
 #send-button img {
-    width: 13px; /* Tamaño específico para la imagen del botón */
+    width: 13px;
     height: 13px;
-    margin-right: 5px; /* Espaciado entre la imagen y el texto (si hay) */
+    margin-right: 5px; 
 }
 
 .box-header{
@@ -177,6 +178,43 @@ body {
 *, ::after, ::before {
     box-sizing: border-box;
 }
+
+
+.message-content {
+    max-width: 80%; /* Por ejemplo, puedes ajustar este valor según tus necesidades */
+    word-wrap: break-word; /* Romper palabras largas para que se ajusten */
+    margin: 10px; /* Añadir margen entre los mensajes */
+}
+
+.suggested-questions {
+    margin-top: 10px;
+}
+
+.suggested-questions strong {
+    font-weight: bold;
+    color: #0040B0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a.suggested-question {
+    text-decoration: none;
+    color: #0040B0;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+a.suggested-question:hover {
+    color: #ff6c3a; /* Cambiar color al pasar el cursor */
+}
+
 
 
 /* Estilos para pantallas pequeñas (hasta 600px) */

@@ -192,6 +192,34 @@
             box-sizing: border-box;
         }
 
+        .suggested-questions {
+            margin-top: 10px;
+        }
+
+        .suggested-questions strong {
+            font-weight: bold;
+            color: #0040B0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        a.suggested-question {
+            text-decoration: none;
+            color: #0040B0;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a.suggested-question:hover {
+            color: #ff6c3a; /* Cambiar color al pasar el cursor */
+        }
 
         /* Estilos para pantallas pequeñas (hasta 600px) */
         @media only screen and (max-width: 600px) {
@@ -264,6 +292,17 @@
                 <img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">
                 {{ welcome_message }}
             </div>
+            <!-- Contenedor para las preguntas sugeridas -->
+        <div id="suggested-questions-container"></div>
+            {% comment %} <div>
+                <p><strong>preguntas sugeridas:</strong></p>
+                <ul>
+                    {% for question in suggested_questions %}
+                        <li> <a href="#" class="suggested-question"> {{question}}</a> </li>
+                    {% endfor %}
+                </ul>
+            </div> {% endcomment %}
+            
         </div>
         <div id="input-container">
             <input type="text" id="user-input" placeholder="Escribe tu pregunta">
@@ -274,7 +313,29 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        //Funcion para manejar la seleccion de preguntas sugeridas
+        // Función para mostrar las preguntas sugeridas y manejar la selección
+        function showSuggestedQuestions(questions) {
+            // Limpiar las sugerencias anteriores
+            $('.suggested-questions').remove();
 
+            $('#chatbox').append('<div class="suggested-questions" style="text-align:center;"><strong style="text-align:center;">Preguntas sugeridas:</strong></div>');
+            var ul = $('<ul>');
+
+            questions.forEach(function(question) {
+                var li = $('<li>');
+                var link = $('<a>').addClass('suggested-question').text(question);
+                link.on('click', function() {
+                    $('#user-input').val(question);
+                    sendMessage();
+                });
+                li.append(link);
+                ul.append(li);
+            });
+
+            $('.suggested-questions').append(ul);
+        }
+        
         function sendMessage() {
             var user_input = $('#user-input').val();
             $('#user-input').val('');
@@ -293,14 +354,58 @@
                                         '</div>');
                     $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
                                         '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
-                                        '<div class="message-content chatbot">' + data.response + '</div>' +
+                                        '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
                                         '</div>');
+                    if (data.response === "Lo siento, no entiendo tu pregunta. ¿Puedes reformularla de manera más clara?") {
+                        saveUnrecognizedQuestion(user_input);
+                    }
+                    if (data.suggested_questions && data.suggested_questions.length > 0) {
+                        showSuggestedQuestions(data.suggested_questions);
+                    }
                     $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+                    
                 },
                 error: function(error) {
                     console.error(error);
                 }
             });
+        }
+
+        function saveUnrecognizedQuestion(question) {
+            // Realiza la llamada AJAX para guardar la pregunta no reconocida
+            var csrftoken = getCookie('csrftoken'); // Obtener el token CSRF
+            $.ajax({
+                type: 'POST',
+                url: '/chatbot/guardar_pregunta_no_reconocida/',
+                data: {
+                    'pregunta': question, 
+                    'csrfmiddlewaretoken': csrftoken
+                },
+                dataType: 'json',
+                success: function(response) {
+                    console.log('Pregunta no reconocida guardada en Firebase');
+                },
+                error: function(error) {
+                    console.error('Error al guardar la pregunta no reconocida');
+                }
+            });
+        }
+
+        // Función para obtener el token CSRF de las cookies
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+                    // Obtener el valor del token CSRF
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
         }
 
         // Capturar el evento de presionar la tecla "Enter"

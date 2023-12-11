@@ -92,18 +92,63 @@
         #back-to-chat button:hover {
             background-color: #bbb; /* Cambiar el color al pasar el mouse sobre el botón */
         }
+        
+        #chatboxt {
+            height: 285px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #d3d3d3;
+        }
+
+        #input-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+        #input-content input {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        #send-butonC {
+            width: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #0040B0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #send-butonC img {
+            width: 13px;
+            height: 13px;
+            margin-right: 5px; 
+        }
     </style>
 </head>
 <body>
+    <div id="chatboxt">
+        <h1>Sección de Comentarios</h1>
+        <p>¡Bienvenido a la sección de comentarios! Por favor, deja tu comentario a continuación:</p>
     
-    <h1>Sección de Comentarios</h1>
-    <p>¡Bienvenido a la sección de comentarios! Por favor, deja tu comentario a continuación:</p>
-    <footer>
-        <input type="text" id="user-inputC" placeholder="Escribe tu pregunta">
-        <button id="send-buton" onclick="enviarComentario()">
+    </div>
+    
+    <div id="input-content">
+        <input type="text" id="user-inputC" placeholder="Escribe tu comentario">
+        <button id="send-butonC" onclick="enviarComentario()">
             <img src="{% static 'img/botonSend.png' %}" alt="Enviar">
         </button>
-    </footer>
+    </div>
+        
+    
     
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js" type="module"></script>
