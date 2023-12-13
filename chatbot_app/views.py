@@ -11,6 +11,7 @@ from datetime import datetime
 import random
 import json
 #initialize_firebase()
+import os
 
 def chatbot_view(request):
     # Mensaje de bienvenida
@@ -47,24 +48,31 @@ def mostrar_comentarios(request):
 def guardar_pregunta_no_reconocida(request):
     if request.method == 'POST':
         try:  
-            question = request.POST.get('question', '')
+            question = request.POST.get('pregunta', '')
             current_time = datetime.now().isoformat()
             
+            #Ruta al archivo miFirebase.json ajustada
+            current_dir = os.path.dirname(os.path.realpath(__file__))
+            file_path = os.path.join(current_dir, 'miFirebase.json')
+            
+            cred = credentials.Certificate(file_path)   
             # Verifica si la app de Firebase está inicializada
             if not firebase_admin._apps:
-                cred = credentials.Certificate("/chatbot_app/miFirebase.json")
                 firebase_admin.initialize_app(cred)
+
             
             # Acceder a la colección en Firestore y guardar la pregunta no reconocida
             pregunta_ref = firestore.client().collection('PreguntasNoReconocidas')
             data = {
-                'pregunta': question, 
-                'fecha': current_time}
+                'pregunta': question,
+                'fecha': current_time, 
+            }
             
             pregunta_ref.add(data)
         
             return JsonResponse({'message': 'Pregunta no reconocida guardada en Firebase'})
         except Exception as e:
+            print(f'Error interno al guardar la pregunta no reconocida: {str(e)}')
             return JsonResponse({'message': f'Error interno: {str(e)}'}, status=500)
     else:
         return JsonResponse({'message': 'Error: Método no permitido'}, status=405)

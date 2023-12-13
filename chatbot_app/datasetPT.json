@@ -90,6 +90,21 @@
                 "Motivado, el dia de hoy esta siendo muy productivo"
             ]
         },{
+            "tag":"yTu",
+            "patterns":[
+                "Bien y tú",
+                "bien y tu",
+                "bien y tú",
+                "estoy bien y tu",
+                "Bien y tú",
+                "yo estoy bien y tú",
+                "Yo estoy bien y tu"
+            ],
+            "responses":[
+                "Excelente, esta bonito el dia para ayudar",
+                "Motivado, el dia de hoy esta siendo muy productivo"
+            ]
+        },{
             "tag":"ComoEstasMal",
             "patterns":[
                 "me encuentro mal",
@@ -135,17 +150,16 @@
             ]
         },
         {
-          "tag":"cual es tu color favorito",
-          "patterns":[
-            "tienes algun color favorito",
-            "cual es tu color favorito",
-            "te gustan los colores"
-          ],
-          "responses":[
-            "La mayoria de colores son bonitos, y mas el naranja combinado con el azul",
-            "Me encantan los colores, pero hay unos de ellos que sobresalen como la combinacion entre el naranja y el azul"
-
-          ]  
+            "tag":"cual es tu color favorito",
+            "patterns":[
+                "tienes algun color favorito",
+                "cual es tu color favorito",
+                "te gustan los colores"
+            ],
+            "responses":[
+                "La mayoria de colores son bonitos, y mas el naranja combinado con el azul",
+                "Me encantan los colores, pero hay unos de ellos que sobresalen como la combinacion entre el naranja y el azul"
+            ]  
         },
         {
             "tag": "Carreras Diurnas",

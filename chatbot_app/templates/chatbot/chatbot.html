@@ -371,14 +371,14 @@
             });
         }
 
-        function saveUnrecognizedQuestion(question) {
+        function saveUnrecognizedQuestion(pregunta) {
             // Realiza la llamada AJAX para guardar la pregunta no reconocida
             var csrftoken = getCookie('csrftoken'); // Obtener el token CSRF
             $.ajax({
                 type: 'POST',
                 url: '/chatbot/guardar_pregunta_no_reconocida/',
                 data: {
-                    'pregunta': question, 
+                    'pregunta': pregunta, 
                     'csrfmiddlewaretoken': csrftoken
                 },
                 dataType: 'json',
