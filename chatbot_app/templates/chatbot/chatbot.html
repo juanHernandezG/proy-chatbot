@@ -260,7 +260,7 @@
         <div class="box-header with-border">
             <img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">
             <h3 class="box-title">Gastón</h3>
-            
+            <img src="{% static "img/logoUbb.png" %}" alt="logo" style="width:30px; height:30px;position: absolute;left: 45%;transform: translateX(-50%);top: 50%;transform: translateY(-50%);">
             <div class="box-tools pull-right">
                 <button id="btnComentarios" type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
                     {% comment %} <img src="{% static 'img/comentario.png' %}" alt="Comentarios" style="margin-right: 10px;width:20px; height:20px;"> {% endcomment %}
@@ -352,10 +352,24 @@
                                         '<img src="{% static "img/usuario.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
                                         '<div class="message-content chatbot">' + user_input + '</div>' +
                                         '</div>');
-                    $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
-                                        '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
-                                        '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
-                                        '</div>');
+                    if(esPregunta(user_input)){
+                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
+                            '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
+                            '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
+                            '</div>');
+                            var additionalMessage = '¿En qué más puedo ayudarte?'
+                            $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' +
+                                '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
+                                '<div class="message-content chatbot" style="word-wrap: break-word;">' + additionalMessage + '</div>' +
+                                '</div>');
+                    }else{
+                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
+                            '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
+                            '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
+                            '</div>');
+                    }
+                    
+                    
                     if (data.response === "Lo siento, no entiendo tu pregunta. ¿Puedes reformularla de manera más clara?") {
                         saveUnrecognizedQuestion(user_input);
                     }
@@ -369,6 +383,10 @@
                     console.error(error);
                 }
             });
+        }
+
+        function esPregunta(mensaje){
+            return mensaje.includes('¿');
         }
 
         function saveUnrecognizedQuestion(pregunta) {
