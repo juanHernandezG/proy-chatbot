@@ -1289,6 +1289,19 @@
                 "Para poder postular a la carrera, puede hacerlo a traves de la pagina webface, o enviar un mensaje al correo pece-concepcion@ubiobio.cl",
                 "Para mas informacion sobre la postulacion a la carrera vespertina ingenieria comercial en concepcion, puede ir al link: http://pece.face.ubiobio.cl/index.php/ingenieria-comercial/"
             ]
+        },
+        {
+            "tag":"Admision",
+            "patterns":[
+                "Cual es el proceso de admision para poder entrar a una carrera",
+                "Existe alguna fecha de admision",
+                "existen fechas sobre la admision de carreras"
+            ],
+            "responses":[
+                "Si realizaste la PAES, puedes saber todo sobre la admision al correo pacunah@ubiobio.cl en Chillán, y en Concepción al sregistro@ubiobio.cl",
+                "Si quieres saber más información sobre la Admision puedes ingresar a la página https://ubiobio.cl/admision/",
+                "🥚"
+            ]
         }
     ]
 }

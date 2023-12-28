@@ -188,6 +188,10 @@ body {
 
 .suggested-questions {
     margin-top: 10px;
+    border: 1px solid #ccc; /* Agrega un borde */
+    background-color: #f9f9f9; /* Cambia el color de fondo */
+    padding: 10px; /* Agrega espacio interno */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
 }
 
 .suggested-questions strong {

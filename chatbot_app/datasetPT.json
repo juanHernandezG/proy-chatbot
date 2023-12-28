@@ -83,8 +83,8 @@
                 "Hasta luego, ten un buen día",
                 "Nos vemos pronto. Cuídate",
                 "Adios, estoy aqui cuando me necesites",
-                "Gracias por pasar por aqui, hasta pronto",
-                "Aqui estare para resolver sus dudas, hasta la proxima"
+                "Aqui estare para resolver sus dudas, hasta la proxima",
+                "Hasta la proximaa!!"
             ]
         },
         {
@@ -99,7 +99,7 @@
             "responses":[
                 "Muy bien, ¿y usted?",
                 "Excelente, esta bonito el dia para ayudar",
-                "Motivado, el dia de hoy esta siendo muy productivo"
+                "Motivado, para ayudarte"
             ]
         },{
             "tag":"ComoEstasMal",
@@ -126,12 +126,13 @@
                 "hablame de ti",
                 "quiero saber sobre ti",
                 "cuentame un poco sobre ti",
-                "podrias hablarme de ti"
+                "podrias hablarme de ti",
+                "quien eres tú"
             ],
             "responses":[
-                "Mi momento ha llegado, mi nombre es Gaston y soy un asistente virtual creado con inteligencia artificial",
-                "Me encanta que pregunten por mi, Soy Gaston una inteligencia artificial, con una finalidad para ayudar a resolver dudas sobre la facultad de ciencias empresariales",
-                "Finalmente alguien se interesa por mi, Soy Gaston asistente personal de la facultad de ciencias empresariales"
+                "OK, mi nombre es Gastón y soy un asistente virtual creado con inteligencia artificial",
+                "Me encanta que pregunten por mi, Soy Gastón una inteligencia artificial, con una finalidad para ayudar a resolver dudas sobre la facultad de ciencias empresariales",
+                "Finalmente alguien se interesa por mi, Soy Gastón asistente personal de la facultad de ciencias empresariales"
             ]
         },{
             "tag":"como te llamas",
@@ -700,12 +701,12 @@
         {
             "tag":"malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
             "patterns":[ 
-                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "malla curricular carrera ingenieria de ejecucion en computacion e informatica en conce"
+                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica",
+                "malla curricular carrera ingenieria de ejecucion en computacion e informatica",
+                "cual es la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica",
+                "malla curricular carrera ingenieria de ejecucion en computacion e informatica"
             ],
             "responses":[
                 "La malla curricular es el plan de estudio, y esta conformada por 45 ramos en total",
@@ -715,14 +716,14 @@
         {
             "tag":"ubicacion malla curricular carrera ingenieria de ejecucion en computacion e informatica en concepcion",
             "patterns":[
-                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica en conce"
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "donde encuentro la malla curricular de la carrera ingenieria de ejecucion en computacion e informatica",
+                "donde encuentro la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "en que parte esta la malla de la carrera ingenieria de ejecucion en computacion e informatica",
+                "donde esta la malla de la carrera ingenieria de ejecucion en computacion e informatica"
             ],
             "responses":[
                 "La malla curricular de la carrera ingenieria ingenieria de ejecucion en computacion e informatica en concepcion, la puede encontrar en la pagina admision ubb",
@@ -733,12 +734,12 @@
         {
             "tag":"duracion de la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
             "patterns":[
-                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica en concepcion",
-                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica en conce",
-                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica en conce"
+                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica",
+                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica",
+                "cuanto dura la carrera ingenieria de ejecucion en computacion e informatica",
+                "cuantos años dura la carrera ingenieria de ejecucion en computacion e informatica",
+                "cuantos semestres dura la carrera ingenieria de ejecucion en computacion e informatica"
             ],
             "responses":[
                 "La malla curricular de la carrera ingenieria de ejecucion en computacion e informatica en concepcion, la puede encontrar en la pagina admision ubb",
@@ -1351,6 +1352,17 @@
             ],
             "responses":[
                 "Todos los puntajes lo puedes encontrar en el siguiente link: https://www.ubiobio.cl/admision/Cuadro_de_Carreras_ADMISION_2023/"
+            ]
+        },{
+            "tag":"admision",
+            "patterns":[
+                "Cual es el proceso de admision para poder entrar a una carrera",
+                "Existe alguna fecha de admision",
+                "existen fechas sobre la admision de carreras"
+            ],
+            "responses":[
+                "Si realizaste la PAES, puedes saber todo sobre la admision al correo pacunah@ubiobio.cl en Chillán, y en Concepción al sregistro@ubiobio.cl",
+                "Si quieres saber más información sobre la Admision puedes ingresar a la página https://ubiobio.cl/admision/"
             ]
         }
     ]
