@@ -270,7 +270,7 @@
                     {% comment %} <img id="btnPregunta" src="{% static 'img/pregunta.png' %}" alt="Pregunta" style="margin-right: 10px;width:20px; height:20px;">     {% endcomment %}
                     <i  class="fa fa-question" aria-hidden="true"></i>
                 </button>
-                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                <button id="btnMinimize" type="button" class="btn btn-box-tool" data-widget="collapse">
                     {% comment %} <img src="{% static 'img/minimizar.png' %}" alt="Minimizar" style="margin-right: 10px;width:20px; height:20px;">  {% endcomment %}
                     <i class="fa fa-minus"></i>
                 </button>
@@ -286,30 +286,32 @@
             </div> {% endcomment %}
         </div>
     
-    
-        <div id="chatbox">
-            <div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">
-                <img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">
-                {{ welcome_message }}
+        <div id="chat-content">
+            <div id="chatbox">
+                <div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">
+                    <img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">
+                    {{ welcome_message }}
+                </div>
+                <!-- Contenedor para las preguntas sugeridas -->
+            <div id="suggested-questions-container"></div>
+                {% comment %} <div>
+                    <p><strong>preguntas sugeridas:</strong></p>
+                    <ul>
+                        {% for question in suggested_questions %}
+                            <li> <a href="#" class="suggested-question"> {{question}}</a> </li>
+                        {% endfor %}
+                    </ul>
+                </div> {% endcomment %}
+                
             </div>
-            <!-- Contenedor para las preguntas sugeridas -->
-        <div id="suggested-questions-container"></div>
-            {% comment %} <div>
-                <p><strong>preguntas sugeridas:</strong></p>
-                <ul>
-                    {% for question in suggested_questions %}
-                        <li> <a href="#" class="suggested-question"> {{question}}</a> </li>
-                    {% endfor %}
-                </ul>
-            </div> {% endcomment %}
-            
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Escribe tu pregunta">
+                <button id="send-button" onclick="sendMessage()">
+                    <img src="{% static 'img/botonSend.png' %}" alt="Enviar">
+                </button>
+            </div>
         </div>
-        <div id="input-container">
-            <input type="text" id="user-input" placeholder="Escribe tu pregunta">
-            <button id="send-button" onclick="sendMessage()">
-                <img src="{% static 'img/botonSend.png' %}" alt="Enviar">
-            </button>
-        </div>
+        
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
@@ -348,22 +350,22 @@
                 dataType: 'json',
                 success: function(data) {
                     // Mostrar la respuesta del chatbot en el chatbox
-                    $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: right; padding: 10px; border-radius: 5px;"">' +
-                                        '<img src="{% static "img/usuario.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
+                    $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: right; padding: 10px; border-radius: 5px; display:flex; align-items: flex-start; justify-content: flex-end;"">' +
                                         '<div class="message-content chatbot">' + user_input + '</div>' +
+                                        '<img src="{% static "img/usuario.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">'+
                                         '</div>');
                     if(esPregunta(user_input)){
-                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
+                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;display:flex; align-items: flex-start;justify-content: flex-start;"">' +
                             '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
                             '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
                             '</div>');
                             var additionalMessage = '¿En qué más puedo ayudarte?'
-                            $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' +
+                            $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px; display:flex; align-items: flex-start;justify-content: flex-start;">' +
                                 '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
                                 '<div class="message-content chatbot" style="word-wrap: break-word;">' + additionalMessage + '</div>' +
                                 '</div>');
                     }else{
-                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;"">' +
+                        $('#chatbox').append('<div style="margin-bottom: 10px; background-color:#0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;display:flex; align-items: flex-start;justify-content: flex-start;"">' +
                             '<img src="{% static "img/chatbot.png" %}" alt="Chatbot Avatar" class="chatbot-avatar" style="width:30px; height:30px;">' +
                             '<div class="message-content chatbot" style="word-wrap: break-word;">' + data.response + '</div>' +
                             '</div>');
@@ -514,6 +516,10 @@
                 // Lógica adicional si es necesario al volver al chatbot
             });                       
 
+            // Manejar el clic del botón de minimizar
+            $('#btnMinimize').click(function() {
+                $('#chat-content').toggle(); // Alternar visibilidad del contenido del chat
+            });
         });
 
 

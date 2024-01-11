@@ -23,7 +23,7 @@ def chatbot_view(request):
         
         suggested_questions = []
         for tag in all_tags:
-            if tag not in ["insultos","duda","disculpas","Agradecimiento","Despedida","ComoEstas","ComoEstasMal","Cuentame de ti","como te llamas","cual es tu color favorito","queeEsUnRamo","queEsUnaAsignatura",]:
+            if tag not in ["saludosHola","insultos","duda","disculpas","Agradecimiento","Despedida","ComoEstas","ComoEstasMal","Cuentame de ti","como te llamas","cual es tu color favorito","queeEsUnRamo","queEsUnaAsignatura",]:
                 patterns_for_tag = [intent['patterns'] for intent in data['Intents'] if intent['tag'] == tag]
                 random_pattern = random.choice(patterns_for_tag[0]) if patterns_for_tag else None
                 if random_pattern:

@@ -186,19 +186,6 @@ body {
     margin: 10px; /* Añadir margen entre los mensajes */
 }
 
-.suggested-questions {
-    margin-top: 10px;
-    border: 1px solid #ccc; /* Agrega un borde */
-    background-color: #f9f9f9; /* Cambia el color de fondo */
-    padding: 10px; /* Agrega espacio interno */
-    border-radius: 5px; /* Agrega esquinas redondeadas */
-}
-
-.suggested-questions strong {
-    font-weight: bold;
-    color: #0040B0;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -206,16 +193,20 @@ ul {
 
 ul li {
     margin-bottom: 5px;
+    background-color: #f9f9f9; /* Cambia el color de fondo */
+    border: 1px solid #ccc; /* Agrega un borde */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    padding: 10px; /* Añade espacio interno */
 }
 
-a.suggested-question {
+ul li a.suggested-question {
     text-decoration: none;
     color: #0040B0;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
 
-a.suggested-question:hover {
+ul li a.suggested-question:hover {
     color: #ff6c3a; /* Cambiar color al pasar el cursor */
 }
 
