@@ -100,39 +100,39 @@
             overflow-y: auto;
             padding: 10px;
             background-color: #d3d3d3;
+            margin-bottom: 80px;
         }
 
-        #input-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-        }
+        
+        
         #input-content input {
-            flex-grow: 1;
-            margin-right: 10px;
+            width: calc(89% - 20px); 
             padding: 10px;
             box-sizing: border-box;
-            border: 1px solid #ccc;
+            border: none;
+            border-top: 1px solid #ccc;
             outline: none;
+            display: inline-block;
+            margin-top: 20px;
         }
+
         #send-butonC {
-            width: 100px;
+            width: calc(20% - 20px); 
             padding: 10px;
             box-sizing: border-box;
             background-color: #0040B0;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 0 0 8px 8px;
             cursor: pointer;
+            display: inline-block; 
         }
 
         #send-butonC img {
             width: 13px;
             height: 13px;
             margin-right: 5px; 
+            filter: brightness(0) invert(1);
         }
     </style>
 </head>
