@@ -17,7 +17,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     left: 10px;
-    width: 30px; /* Tamaño específico para los iconos */
+    width: 30px; 
     height: 30px;
     margin-left: 10px;
 }
@@ -30,9 +30,9 @@ body {
 }
 
 #chat-header-icons img{
-    width: 30px; /* Tamaño específico para los iconos */
+    width: 30px; 
     height: 30px;
-    margin-right: 100px; /* Espaciado entre los iconos */
+    margin-right: 100px; 
 }
 
 #chat-container {
@@ -182,9 +182,9 @@ body {
 
 
 .message-content {
-    max-width: 80%; /* Por ejemplo, puedes ajustar este valor según tus necesidades */
-    word-wrap: break-word; /* Romper palabras largas para que se ajusten */
-    margin: 10px; /* Añadir margen entre los mensajes */
+    max-width: 80%; 
+    word-wrap: break-word;
+    margin: 10px; 
 }
 
 ul {
@@ -194,10 +194,10 @@ ul {
 
 ul li {
     margin-bottom: 5px;
-    background-color: #f9f9f9; /* Cambia el color de fondo */
-    border: 1px solid #ccc; /* Agrega un borde */
-    border-radius: 5px; /* Añade esquinas redondeadas */
-    padding: 10px; /* Añade espacio interno */
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 10px; 
 }
 
 ul li a.suggested-question {
@@ -208,7 +208,7 @@ ul li a.suggested-question {
 }
 
 ul li a.suggested-question:hover {
-    color: #ff6c3a; /* Cambiar color al pasar el cursor */
+    color: #ff6c3a; 
 }
 
 

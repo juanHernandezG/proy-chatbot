@@ -276,14 +276,6 @@
                 </button>
             </div>
 
-            {% comment %} <div id="chat-header-icons">
-                <!-- Icono de comentarios -->
-                <img src="{% static 'img/comentario.png' %}" alt="Comentarios" style="margin-right: 10px;width:30px; height:30px;">
-                <!-- Icono de signo de pregunta -->
-                <img src="{% static 'img/pregunta.png' %}" alt="Pregunta" style="margin-right: 10px;width:30px; height:30px;">
-                <!-- Icono para minimizar la barra -->
-                <img src="{% static 'img/minimizar.png' %}" alt="Minimizar" style="margin-right: 10px;width:30px; height:30px;">     
-            </div> {% endcomment %}
         </div>
     
         <div id="chat-content">
@@ -294,14 +286,6 @@
                 </div>
                 <!-- Contenedor para las preguntas sugeridas -->
             <div id="suggested-questions-container"></div>
-                {% comment %} <div>
-                    <p><strong>preguntas sugeridas:</strong></p>
-                    <ul>
-                        {% for question in suggested_questions %}
-                            <li> <a href="#" class="suggested-question"> {{question}}</a> </li>
-                        {% endfor %}
-                    </ul>
-                </div> {% endcomment %}
                 
             </div>
             <div id="input-container">
@@ -315,7 +299,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        //Funcion para manejar la seleccion de preguntas sugeridas
         // Función para mostrar las preguntas sugeridas y manejar la selección
         function showSuggestedQuestions(questions) {
             // Limpiar las sugerencias anteriores
@@ -436,7 +419,6 @@
             }
         });
 
-        //
         // Variable para almacenar el mensaje de bienvenida
         var welcomeMessage = '';
 
@@ -444,7 +426,7 @@
             // Obtener la fecha actual
             var currentDate = new Date();
     
-            // Formatear la fecha como deseas
+            // Formatear la fecha
             var formattedDate = currentDate.toLocaleDateString('es-ES', {
                 year: 'numeric',
                 month: 'long',
@@ -484,7 +466,6 @@
                 // Mostrar el mensaje de bienvenida al volver al chatbot
                 $('#chatbox').append('<div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' + welcomeMessage + '</div>');
 
-                // Lógica adicional si es necesario al volver al chatbot
             });
 
             $('#btnComentarios').click(function() {
@@ -512,8 +493,7 @@
                 $('#chatbox').prepend('<div class="current-date" style="text-align: center; color: #0040B0; font-weight: bold; margin-bottom: 10px;">' + formattedDate + '</div>');
                 // Mostrar el mensaje de bienvenida al volver al chatbot
                 $('#chatbox').append('<div class="welcome-message" style="margin-bottom: 10px; background-color: #0040B0; color: white; text-align: left; padding: 10px; border-radius: 5px;">' + welcomeMessage + '</div>');
-            
-                // Lógica adicional si es necesario al volver al chatbot
+
             });                       
 
             // Manejar el clic del botón de minimizar

@@ -103,7 +103,7 @@
             "patterns":[
                 "como te encuentras",
                 "como te sientes",
-                "como estas?",
+                "como estas",
                 "que tal",
                 "como te va",
                 "Cómo te encuentras",
@@ -1946,6 +1946,19 @@
             ],
             "responses": [
                 "Para saber mas sobre las carreras de la Facultad, puedes ingresar en los siguientes links: <a href='https://pece.face.ubiobio.cl/index.php/programas/' target='_blank'>https://pece.face.ubiobio.cl/index.php/programas/</a> y <a href='https://ubiobio.cl/admision/Ciencias_Empresariales/' target='_blank'>https://ubiobio.cl/admision/Ciencias_Empresariales/</a>"
+            ]
+        },{
+            "tag":"ubicacion Facultad",
+            "patterns":[
+                "ubicación",
+                "ubicacion de la facultad",
+                "donde se ubicá la Facultad de Ciencias Empresariales",
+                "donde se ubicá la facultad",
+                "ubicación de la facultad",
+                "donde se encuentra la Facultad"
+            ],
+            "responses":[
+                "En Concepción se ubicá en Avda. Collao 1202, Castilla 5-C - CP: 4050231 y en Chillán en Avda. Andrés Bello 720, Castilla 447"
             ]
         }
     ]
