@@ -1,0 +1,3 @@
+# Ignorar archivos específicos
+chatbot_app/firebase_config.json
+chatbot_app/miFirebase.json
